@@ -47,7 +47,7 @@ grid
 The grid operation does output a nicely formatted table of all available color
 codes inside your current terminal emulation.
 
-.. image:: screenshots/grid.png
+.. image:: https://github.com/jakobwesthoff/256colors/raw/master/screenshots/grid.png
    :alt: Grid operation of 256colors in action
    :align: center
 
@@ -60,6 +60,6 @@ for a given RGB color value. The color has to be provided as a tuple of three
 values ranging from ``0-255``, each of them providing information about one
 color channel.
 
-.. image:: screenshots/calculate.png
+.. image:: https://github.com/jakobwesthoff/256colors/raw/master/screenshots/calculate.png
    :alt: Calculate operation of 256colors in action
    :align: center
