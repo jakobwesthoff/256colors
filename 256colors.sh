@@ -126,7 +126,11 @@ action-calculate() {
     local colorCode=$(rgbToColorCode "$1" "$2" "$3")
     
     echo "The ansi color code mostly matching your color (r: $1, b: $2, g: $3) is $colorCode"
-    echo -e "\033[0m\033[38;5;${colorCode}mForeground example\033[0m \033[38;5;232;48;5;${colorCode}m Background example \033[0m"
+    echo -en "\033[0m\033[38;5;${colorCode}mForeground example "
+    echo -n "(\\033[38;5;${colorCode}m)"
+    echo -en "\033[0m \033[38;5;232;48;5;${colorCode}m Background example "
+    echo -n "(\\033[48;5;${colorCode}m)"
+    echo -e "\033[0m"
 }
         
 
